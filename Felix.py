@@ -24,14 +24,14 @@ bono_eficiencia = float(input('Intoduzca bono Eficiencia:'))
 f = open("pago_nomina_12sep2021.txt", "w")
 
 #Leeo el archivo txt
-with open("Archivo nomina.txt", "r") as pagos:
-    for linea in pagos:
+with open("Archivo nomina.txt", "r") as nomina:
+    for linea in nomina:
 
         campo = linea.split()
 
         
-        if campo[0].isdigit():
-            fec = inv_fecha(campo[1])
+        if campo[0].isdigit(): # Si el dato en la posicion es Verdadero
+            fec = inv_fecha(campo[1]) # Mando a llamar la funcion de inversion de fecha
             suel = pago(campo[4].replace("$",""),campo[5],bono_general,bono_eficiencia)
         else:
             fec = campo[1]
