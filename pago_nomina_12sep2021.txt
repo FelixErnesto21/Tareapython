@@ -1,4 +1,4 @@
-cedula fecha_ingreso empleado sueldo_base horas_ext
+cedula fecha_ingreso empleado sueldo_base horas_extra
 
 1334521 1999-12-23 Juan Castro 60$ 5 9660.0
 
